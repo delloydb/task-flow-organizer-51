@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))',
+					light: 'hsl(var(--primary-light))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +53,16 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				priority: {
+					high: 'hsl(var(--priority-high))',
+					medium: 'hsl(var(--priority-medium))',
+					low: 'hsl(var(--priority-low))'
+				},
+				status: {
+					todo: 'hsl(var(--status-todo))',
+					progress: 'hsl(var(--status-progress))',
+					done: 'hsl(var(--status-done))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
