@@ -58,32 +58,59 @@ Access the live deployed app here:
 ## 📁 File Structure
 
 task-manager-app/
+
 │
+
 ├── backend/ # Express.js + MongoDB server
+
 │ ├── controllers/ # Route logic for users and tasks
+
 │ ├── middleware/ # Auth and error-handling middleware
+
 │ ├── models/ # Mongoose schemas (User, Task)
+
 │ ├── routes/ # API endpoints for tasks and users
+
 │ ├── utils/ # Helper functions (e.g., token handling, cron jobs)
+
 │ ├── config/ # MongoDB connection and environment configs
+
 │ ├── server.js # Main backend entry point
+
 │ └── .env.example # Example of environment variables
+
 │
+
 ├── frontend/ # Next.js application
+
 │ ├── components/ # Reusable UI components
+
 │ ├── context/ # Global state (e.g., auth, tasks)
+
 │ ├── pages/ # Routes
+
 │ │ ├── index.js # Task dashboard
+
 │ │ ├── calendar.js # Calendar view
+
 │ │ ├── login.js # Login form
+
 │ │ ├── register.js # Registration form
+
 │ │ └── settings.js # User settings
+
 │ ├── styles/ # Tailwind CSS files
+
 │ ├── utils/ # API functions and helpers
+
 │ └── tailwind.config.js # Tailwind configuration
+
 │
+
 ├── README.md # Project documentation
+
 └── package.json # Dependencies and scripts
+
 
 
 ---
@@ -111,7 +138,7 @@ This project is licensed under the MIT License.
 
 **Lloyd Brown**  
 Built as part of a MERN stack final year project  
-For academic and professional demonstration
+For academic and professional demonstration under Power Learn Project academy
 
 ---
 
