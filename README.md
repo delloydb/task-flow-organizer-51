@@ -1,73 +1,124 @@
-# Welcome to your Task Managment App project
+# Task Flow Organizer
 
-## Project info
+A fully functional, multi-user **Task Management App** built with the **MERN stack** (MongoDB, Express.js, React with Next.js, Node.js). This application helps users manage personal and professional tasks efficiently with features like deadlines, priority levels, tags, recurring tasks, drag-and-drop organization, calendar view, and more.
 
-**URL**: https://lovable.dev/projects/7e342e79-8cca-4ba1-8ab8-fac5debf2c50
+## 🚀 Live Demo
 
-## How can I edit this code?
+Access the live deployed app here:  
+[https://task-flow-organizer-51.lovable.app/](https://task-flow-organizer-51.lovable.app/)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✅ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7e342e79-8cca-4ba1-8ab8-fac5debf2c50) and start prompting.
+- User registration and login (JWT Authentication)
+- Secure password storage using bcrypt
+- Create, edit, delete, and organize tasks
+- Prioritize tasks (High, Medium, Low)
+- Set deadlines and automatic reminders
+- Recurring tasks (Daily, Weekly, Monthly)
+- Task categorization using tags
+- Filter and sort tasks by status, priority, or tags
+- Drag-and-drop task reordering
+- Calendar view for visual task tracking
+- Mobile-responsive design using Tailwind CSS
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🔧 Functionalities
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### User Authentication
+- Secure sign-up and login with JWT
+- Passwords hashed using bcrypt
+- Auth-protected routes
+- Each user sees only their own tasks
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Task Management
+- CRUD operations on tasks
+- Task fields include:
+  - Title, description
+  - Deadline
+  - Priority level
+  - Status (To-do, In Progress, Done)
+  - Tags
+  - Recurrence (Daily, Weekly, Monthly)
+  - Reminders
+- Drag-and-drop task movement
+- Sort and filter options
+- Calendar integration
 
-Follow these steps:
+### User Interface
+- Built with Next.js and Tailwind CSS
+- Clean and intuitive layout
+- Responsive for all devices
+- Modal-based and page-based task interactions
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📁 File Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
+task-manager-app/
+│
+├── backend/ # Express.js + MongoDB server
+│ ├── controllers/ # Route logic for users and tasks
+│ ├── middleware/ # Auth and error-handling middleware
+│ ├── models/ # Mongoose schemas (User, Task)
+│ ├── routes/ # API endpoints for tasks and users
+│ ├── utils/ # Helper functions (e.g., token handling, cron jobs)
+│ ├── config/ # MongoDB connection and environment configs
+│ ├── server.js # Main backend entry point
+│ └── .env.example # Example of environment variables
+│
+├── frontend/ # Next.js application
+│ ├── components/ # Reusable UI components
+│ ├── context/ # Global state (e.g., auth, tasks)
+│ ├── pages/ # Routes
+│ │ ├── index.js # Task dashboard
+│ │ ├── calendar.js # Calendar view
+│ │ ├── login.js # Login form
+│ │ ├── register.js # Registration form
+│ │ └── settings.js # User settings
+│ ├── styles/ # Tailwind CSS files
+│ ├── utils/ # API functions and helpers
+│ └── tailwind.config.js # Tailwind configuration
+│
+├── README.md # Project documentation
+└── package.json # Dependencies and scripts
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Technologies Used
 
-**Use GitHub Codespaces**
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (with Mongoose)
+- **Authentication:** JSON Web Tokens (JWT), bcrypt
+- **Calendar View:** FullCalendar or similar
+- **Drag and Drop:** react-beautiful-dnd
+- **Notifications & Reminders:** Node Cron, browser notifications
+- **Deployment:** Vercel (Frontend), Render (Backend)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📄 License
 
-This project is built with:
+This project is licensed under the MIT License.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🙋 Author
 
-Simply open [Lovable](https://lovable.dev/projects/7e342e79-8cca-4ba1-8ab8-fac5debf2c50) and click on Share -> Publish.
+**Lloyd Brown**  
+Built as part of a MERN stack final year project  
+For academic and professional demonstration
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🧪 Future Improvements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Google Calendar integration
+- Offline support and PWA functionality
+- Admin panel for team-based task management
+- Enhanced analytics dashboard
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
