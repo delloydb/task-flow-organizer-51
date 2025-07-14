@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useAuth } from '@/contexts/AuthContext';
 import { Header } from '@/components/layout/Header';
 import { Dashboard } from '@/pages/Dashboard';
 
 const Index = () => {
+  const { user } = useAuth();
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isNewTaskModalOpen, setIsNewTaskModalOpen] = useState(false);
 
